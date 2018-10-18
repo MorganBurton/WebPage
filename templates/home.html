@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="content-section">
+		<form method='POST' action "">
+			<fieldset class="form-group">
+				<legend class="border-bottom-md-4">There's a method to the madness<h2 class="h2text"> A Brief overview of the programs I have been working on, both automation tasks and consumer end products. All of which have been integrated into browser for a user friendly and convenient experience.</h2>
+				<h2 class="h2text"> Below there is a discussion forum where you can leave questions etc.</h2>
+				</legend>
+					
+</fieldset>
+</form>
+</div>
+<div class="content-section">
+		<form method='POST' action "">
+			<fieldset class="form-group">
+				<legend class="border-bottom-md-4">
+					{% for post in posts %}
+						<h1>{{post.title}}</h1>
+							<p> By {{post.author}}</p>
+					{% endfor %}
+	
+	
+	</form>
+	</div>
+	</body>
+	</html>
+{% endblock content%}
